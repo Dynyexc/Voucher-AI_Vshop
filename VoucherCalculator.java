@@ -8,6 +8,6 @@ public class VoucherCalculator {
         
         double finalPrice = cartTotal + shippingFee - voucherValue;
         
-        return finalPrice;
+        return Math.max(0, finalPrice);
     }
 }
